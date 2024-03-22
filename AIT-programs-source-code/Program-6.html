@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Pseudo Demo</title>
+    <style>
+      a:link {
+        color: green;
+      }
+      a:visited  {
+        color: red;
+      }
+      a.high:hover {
+        color: black;
+        cursor: progress;
+      }
+      a:active {
+        color: yellow;
+      }
+      p.high:hover {
+        color: white;
+        font-family: Arial;
+        background-color: red;
+      }
+      div {
+        background-color: green;
+        color: white;
+        padding: 25px;
+        text-align: center;
+        font-size: 40px;
+      }
+      div:hover {
+        background-color: blue;
+      }
+
+    </style>
+  </head>
+  <body style="width: 500px;border:1px solid gray; padding:10px;">
+    <a href="hello.html" class="high">Hover to see effect</a>
+    <p class="high">This is Pseudo Class and CSS class Demo</p>
+    <p>Mouse over the div element below to change its background color:</p>
+    <div>Mouse Over Me</div>
+  </body>
+</html>

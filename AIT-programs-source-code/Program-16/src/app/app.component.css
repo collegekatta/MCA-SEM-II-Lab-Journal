@@ -1,0 +1,15 @@
+.container{
+    background: whitesmoke;
+    padding: 10px ;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+    
+}
+
+li{
+    padding-left: 10px;
+}

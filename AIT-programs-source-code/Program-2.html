@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <title>Example of Form Element and Attribute</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <body>
+    <div class="container m-3">
+      <div class="card" style="width: 45rem">
+        <div class="card-header fs-4">Example of Form Element and Attribute</div>
+        <div class="card-body">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="Email Id:" class="form-label">Email Id:</label>
+              <input type="email" placeholder="Enter your email id." class="form-control" id="Email Id:"/>
+            </div>
+            <div class="col-md-6">
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter password"/>
+            </div>
+            <div class="col-6">
+              <h4>Select gender</h4>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="Male"/>
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="Female"/>
+                <label class="form-check-label" for="inlineRadio2">Female</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <h4>Select subjects</h4>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="subject[]" value="Math"/>
+                <label class="form-check-label" for="inlineCheckbox1">Math</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="subject[]" value="English"/>
+                <label class="form-check-label" for="inlineCheckbox2" >English</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="subject[]" value="Science"/>
+                <label class="form-check-label" for="inlineCheckbox3" >Science</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="description" class="form-label">Description</label>
+              <textarea class="form-control" id="description" rows="3"></textarea>
+            </div>
+            <div class="col-6">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Select...</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Gujrat">Gujrat</option>
+                </select>
+              </div>
+            <div class="col-6">
+              <label for="formFile" class="form-label">Upload</label>
+              <input class="form-control" type="file" id="formFile" />
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+              <button type="reset" class="btn btn-outline-warning">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

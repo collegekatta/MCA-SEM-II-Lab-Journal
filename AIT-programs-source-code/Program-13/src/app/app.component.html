@@ -1,0 +1,27 @@
+<h3>*ngIf Demo</h3>
+<h4 *ngIf="show">condition is true and ngIf is true.</h4>
+<h4 *ngIf="!show1">condition and ngIf is true.</h4>
+<h3>*ngIf and else Block Demo</h3>
+<h4 *ngIf="show">condition is true and ngIf Part is true.</h4>
+<h3>*nfIf and else both block demo</h3>
+<h4 *ngIf="msg == 'h1'; then ifBlock else eBlock">condition is true and ngIf Part is true.</h4>
+<h3>For Loop</h3>
+<ol>
+  <li *ngFor="let a of arr">
+    {{ a }}
+  </li>
+</ol>
+
+<h3>EMP DATA</h3>
+<table>
+  <tr>
+    <th>EMP_ID</th>
+    <th>EMP_NAME</th>
+    <th>EMP_SALARY</th>
+  </tr>
+  <tr *ngFor="let em of Emp">
+    <td>{{ em.Emp_id }}</td>
+    <td>{{ em.Emp_name }}</td>
+    <td>{{ em.Emp_sal }}</td>
+  </tr>
+</table>
